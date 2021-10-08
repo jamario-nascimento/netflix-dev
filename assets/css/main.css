@@ -1,0 +1,39 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+    --branco:#FFFFFF;
+    --branco-600:#AAA;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap:3em;
+}
+
+header .logo{
+    margin-left: 5px;
+    color:var(--vermelho);
+    font-family: 'Arial Black', times, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+header nav a{
+    text-decoration: none;
+    color:var(--branco-600) ;
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+header nav a:hover{
+    color:var(--branco) ;
+}
