@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFlix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
     <header>
@@ -20,5 +24,118 @@
             
         </div>
     </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">O MENTALISTA</h3>
+                <p class="descricao">Patrick Jane é famoso por sua habilidade de alta percepção de tudo que está ao seu redor. 
+                    Ele já quase foi uma celebridade, alegando ser médium vidente, mas agora admite que fingia ter poderes paranormais. 
+                    Com sua grande habilidade de observação, Patrick trabalha como consultor independente para as autoridades da
+                     Califórnia, resolvendo um número considerável de crimes complicados.</p>
+
+                     <div class="botoes">
+                        <button type="button"  role="button" class="botao" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fas fa-info-circle"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button type="button" role="button" class="botao"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <i class="fas fa-info"></i>
+                            MAIS INFORMACOES
+                        </button>
+                    </div>
+                    
+            </div>
+           
+           
+        </div>
+
+<dic class="carrosel-filmes">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="assets/img/capas/f1.jpg" class="box-filme" alt="" srcset="">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/capas/f2.jpg" class="box-filme" alt="" srcset="">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/capas/f3.jpg" class="box-filme" alt="" srcset="">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/capas/f4.jpg" class="box-filme" alt="" srcset="">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/capas/f5.jpg" class="box-filme" alt="" srcset="">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/capas/f6.jpg" class="box-filme" alt="" srcset="">
+        </div>
+
+        <div class="item">
+            <img src="assets/img/capas/f7.jpg" class="box-filme" alt="" srcset="">
+        </div>
+
+
+       
+    </div>
+</dic>
+
+
+  
+  <!-- Modal  player-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JW7VHrsPIZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal  info -->
+   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"> 
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h3 class="title">O Mentalista <i>(2008)</i></h3>
+            <small class="info"><div class="indicativo">14</div> Crime, Drama, Mistério <i>43m</i></small>
+
+            <h4 class="title-sinopse">Sinopse</h4>
+            <p class="text-sinopse">
+                Patrick Jane é famoso por sua habilidade de alta percepção de tudo que está ao seu redor.
+                 Ele já quase foi uma celebridade, alegando ser médium vidente,
+                  mas agora admite que fingia ter poderes paranormais.
+                   Com sua grande habilidade de observação, Patrick trabalha como consultor independente 
+                   para as autoridades da Califórnia, resolvendo um número considerável de crimes complicados.
+            </p>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+        
+
+       
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a65046bb16.js" crossorigin="anonymous"></script>
+    <script src="vendors/jQuery/jquery3.6.0.js" ></script>
+    <script src="vendors/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
